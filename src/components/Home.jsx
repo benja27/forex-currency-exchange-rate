@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../redux/data/dataSlice";
-import { useDispatch } from "react-redux";
 import {  useSelector } from "react-redux/es/hooks/useSelector";
 
 function Home() {
