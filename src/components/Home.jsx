@@ -21,6 +21,11 @@ function Home() {
       setIsSearching(false);
       return;
     }
+    if (valor === "ALL") {
+      setIsSearching(true);
+      setBusqueda(data)
+      return;
+    }
     setIsSearching(true);
     const newBusqueda = data.filter((element) =>
       element.ticker.includes(valor.toUpperCase())
@@ -29,9 +34,10 @@ function Home() {
   }
 
   return (
-    <div className="bg-primary min-vh-100 text-white py-3">
-      <div className="container">
-        <div className="d-flex justify-content-center gap-2">
+    <div className="min-vh-100 text-white py-">
+      <div className="sec-color" >
+        
+        {/* <div className="d-flex justify-content-center gap-2">
           <h2 className="justify-self-center">Search</h2>
           <input
             onChange={(e) => {
@@ -40,24 +46,42 @@ function Home() {
             className="form-control flex-grow-1"
             type="text"
           />
-        </div>
+        </div> */}
+         
+          <div className="container">
+            <label className="form-label">Currency</label>
+            <select onChange={(e)=>{              
+              handleChange(e.target.value)
+            }} className="form-select form-select-lg text-white border-1" defaultValue={"ALL"}>
+              <option value="ALL" >Select one</option>
+              <option value="USD">USD</option>
+              <option value="eur">EUR</option>
+              <option value="mxn">MXN</option>
+              <option value="jpy">JPY</option>
+              <option value="ALL">All</option>
+            </select>
+          </div>
+
+
+
+
         {!isSearching ? (
-          <h2></h2>
+          <span></span>
         ) : (
-          <div className="d-flex my-3 mx-auto justify-content-center gap-4 align-items-center gap-3 bg-dark rounded px-3" style={{ maxWidth:"45%"  }}>
+          <div className="d-flex my- mx-auto justify-content-center gap-4 align-items-center gap-3  rounded px-3" style={{ maxWidth:"45%"  }}>
             <span className="h3 m-0">{busqueda.length}</span>
             <span className="h6 m-0"> Results</span>
           </div>
         )}
       </div>
 
-      <div className="container">
-        <div className="row gy-5 gx-5 ards-container chec">
+      <div className="containe">
+        <div className="row  ards-container chec">
           {!isSearching ? (
             data.map((element, index) => (
               <div
                 key={index}                
-                className="text-center col-6 col-sm-6 col-md-4 col-xl-3 py-4 bg-succes"
+                className="text-center item-card col-6 col-sm-6 col-md-4 col-xl-3 py-4 bg-succes"
               >
                 <h3>{element.ticker}</h3>
                 <p className="fs-5"> Bid: {element.bid}</p>
@@ -78,7 +102,7 @@ function Home() {
             busqueda.map((element, index) => (
               <div
                 key={index}
-                className="text-center col-12 col-sm-6 col-md-4 py-4 bg-succes"
+                className="text-center col-12 item-card col-sm-6 col-md-4 py-4 bg-succes"
               >
                 <h3>{element.ticker}</h3>
                 <p className="fs-5"> Bid: {element.bid}</p>

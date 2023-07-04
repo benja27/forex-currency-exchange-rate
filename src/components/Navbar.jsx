@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="navbar text-white bg-dark">
+    <div className="navbar text-white main-color">
       <div className="container">
         <Link to={"/"} >
           <h2>Crypto-Merca</h2>

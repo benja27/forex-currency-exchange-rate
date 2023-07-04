@@ -3,6 +3,37 @@
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
+.main-color{
+  background-color: #e12d72 ;
+}
+.sec-color{
+  background-color: #e9518b ;
+}
+
+
+
+.item-card:nth-child(odd){
+  background-color: #e12d72 ;
+}
+.item-card:nth-child(even){
+  background-color: #FC5193 ;
+}
+
+.form-select {
+  background-color: #EC4C8A;  
+  border-color: none;
+  box-shadow: none;
+}
+.form-select:focus {
+  background-color: #EC4C8A;  
+  border-color: none;
+  box-shadow: none;
+}
+
+option{
+  background-color: #EC4C8A;
+}
+
 .content{
   flex-grow: 1;
   padding-top: 20px;  
