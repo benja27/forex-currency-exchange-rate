@@ -8,6 +8,11 @@
   padding-top: 20px;  
 }
 
+.detail-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
 .check,
 .check *{
   border: 1px solid white;

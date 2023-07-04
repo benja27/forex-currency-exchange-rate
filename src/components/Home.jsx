@@ -57,7 +57,7 @@ function Home() {
             data.map((element, index) => (
               <div
                 key={index}                
-                className="text-center col-12 col-sm-6 col-md-4 col-xl-3 py-4 bg-succes"
+                className="text-center col-6 col-sm-6 col-md-4 col-xl-3 py-4 bg-succes"
               >
                 <h3>{element.ticker}</h3>
                 <p className="fs-5"> Bid: {element.bid}</p>
