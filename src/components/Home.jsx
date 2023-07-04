@@ -13,7 +13,7 @@ function Home() {
 
   const { data } = useSelector((data) => data.data);
   const [busqueda, setBusqueda] = useState([]);
-  const [isSearching, setIsSearching] = useState(false);
+  const [isSearching, setIsSearching] = useState(true);
   const navigate = useNavigate();
 
   function handleChange(valor) {
@@ -22,7 +22,7 @@ function Home() {
       return;
     }
     if (valor === "ALL") {
-      setIsSearching(true);
+      setIsSearching(false);
       setBusqueda(data)
       return;
     }
@@ -33,20 +33,19 @@ function Home() {
     setBusqueda(newBusqueda);
   }
 
+  if(!data){
+    (
+      <h2>Loading...</h2>
+    )
+  }
+
+
+
+
   return (
-    <div className="min-vh-100 text-white py-">
-      <div className="sec-color" >
+    <div className="min-vh-100 text-white bg-dark">
+      <div className="sec-color" >       
         
-        {/* <div className="d-flex justify-content-center gap-2">
-          <h2 className="justify-self-center">Search</h2>
-          <input
-            onChange={(e) => {
-              handleChange(e.target.value);
-            }}
-            className="form-control flex-grow-1"
-            type="text"
-          />
-        </div> */}
          
           <div className="container">
             <label className="form-label">Currency</label>
