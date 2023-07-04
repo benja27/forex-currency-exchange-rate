@@ -13,16 +13,16 @@ function Home() {
 
   const { data } = useSelector((data) => data.data);
   const [busqueda, setBusqueda] = useState([]);
-  const [isSearching, setIsSearching] = useState(true);
+  const [isSearching, setIsSearching] = useState(false);
   const navigate = useNavigate();
 
   function handleChange(valor) {
     if (valor === "") {
-      setIsSearching(false);
+      setIsSearching(true);
       return;
     }
     if (valor === "ALL") {
-      setIsSearching(false);
+      setIsSearching(true);
       setBusqueda(data)
       return;
     }
@@ -43,7 +43,7 @@ function Home() {
 
 
   return (
-    <div className="min-vh-100 text-white bg-dark">
+    <div className="min-vh-100 text-white third-color">
       <div className="sec-color" >       
         
          
@@ -67,7 +67,7 @@ function Home() {
         {!isSearching ? (
           <span></span>
         ) : (
-          <div className="d-flex my- mx-auto justify-content-center gap-4 align-items-center gap-3  rounded px-3" style={{ maxWidth:"45%"  }}>
+          <div className="d-flex my- mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3" style={{ maxWidth:"45%"  }}>
             <span className="h3 m-0">{busqueda.length}</span>
             <span className="h6 m-0"> Results</span>
           </div>
@@ -75,9 +75,19 @@ function Home() {
       </div>
 
       <div className="containe">
-        <div className="row  ards-container chec">
+        <div className="row w-100 mx-auto">
+            
+
           {!isSearching ? (
             data.map((element, index) => (
+              <>
+
+                  
+
+
+
+
+
               <div
                 key={index}                
                 className="text-center item-card col-6 col-sm-6 col-md-4 col-xl-3 py-4 bg-succes"
@@ -96,6 +106,11 @@ function Home() {
                   Get more info!
                 </button>
               </div>
+
+              </>
+
+
+
             ))
           ) : busqueda.length > 0 ? (
             busqueda.map((element, index) => (

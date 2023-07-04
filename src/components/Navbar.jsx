@@ -7,13 +7,13 @@ function Navbar() {
       <div className="container">
 
         <div className="row d-flex w-100">
-          <div className="col-8 d-flex justify-content-end">
+          <div className="col-7 d-flex justify-content-end">
             <Link to={"/"}>
               <h2 className="text-white">Forex</h2>
             </Link>
           </div>
 
-          <div className="col-4 d-flex justify-content-end align-items-center gap-4">
+          <div className="col-5 d-flex justify-content-end align-items-center gap-4">
             <i className="fas fa-microphone" ></i>
             <i className="fas fa-cog" ></i>
           </div>
