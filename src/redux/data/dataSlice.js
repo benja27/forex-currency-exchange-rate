@@ -34,7 +34,6 @@ const dataSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchData.fulfilled, (state, action) => {
-      console.log('u called api');
       state.isLoading = false;
       state.data = action.payload;
       state.search = action.payload;
