@@ -1,66 +1,85 @@
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* red */
+
+/* :root {
+  --main-color: #e12d72;
+  --sec-color: #e9518b;
+  --third-color: #b93266;
+  --forth-color: #5788E4;
+} */
+
+/* blue */
+:root {
+  --main-color: #5788e4;
+  --sec-color: #4063a6;
+  --third-color: #4369b3;
+  --forth-color: #35548b;
 }
 
 .main-color {
-  background-color: #e12d72;
+  background-color: var(--main-color);
 }
 
 .sec-color {
-  background-color: #e9518b;
+  background-color: var(--sec-color);
 }
 
 .third-color {
-  background-color: #b93266;
+  background-color: var(--third-color);
 }
 
+.forth-color {
+  background-color: var(--third-color);
+}
 
 .item-card:nth-child(odd) {
-  background-color: #e12d72;
-  border-bottom: 1px solid black !important;
+  /* background-color: #e12d72; */
+  background-color: var(--main-color);
+  border-bottom: 1px solid rgb(255, 255, 255) !important;
 }
 
 .item-card:nth-child(even) {
-  background-color: #fc5193;
-  border-top: 1px solid black !important;
+  /* background-color: #fc5193; */
+  background-color: var(--sec-color);
+  border-top: 1px solid rgb(255, 255, 255) !important;
 }
 
 .form-select {
-  background-color: #ec4c8a;
+  background-color: var(--main-color);
   box-shadow: none;
 }
 
 .form-select:focus {
-  background-color: #ec4c8a;
+  background-color: var(--main-color);
   box-shadow: none;
 }
 
 option {
-  background-color: #ec4c8a;
+  background-color: var(--third-color);
 }
 
-.paralel-container{
-  perspective: 1000px; 
-  /* height: 200px; 
+.paralel-container {
+  perspective: 1000px;
+
+  /* height: 200px;
   width: 200px;  */
   margin: 0 auto;
 }
 
-.paralel-item{
+.paralel-item {
   /* height: 100%;
   width: 100%; */
-  background-color: blue; /* Ajusta el color de fondo según tus necesidades */
+
+  /* background-color: blue;  */
   transform-style: preserve-3d; /* Mantiene la transformación en 3D para los hijos */
+
   /* transform: rotateY(45deg);  */
   transition: transform 1s ease;
 }
 
 .paralel-item:hover {
-  transform: rotateY(-45deg); 
-  transform: translateX(-50px)
+  transform: rotateY(-45deg);
+  transform: translateX(-50px);
 }
-
 
 .content {
   flex-grow: 1;

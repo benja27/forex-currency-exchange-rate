@@ -27,8 +27,8 @@ function Home() {
   }
 
   return (
-    <div className="min-vh-100 text-white third-color">
-      <div className="sec-color">
+    <div className="min-vh-100 main-color text-white">
+      <div className="main-color pt-3">
         <div className="container">
           <h4 htmlFor="coin" className="form-label">
             Currency
@@ -58,15 +58,15 @@ function Home() {
 
         {data.length === 124 ? (
           <div
-            className="d-flex  mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3"
-            style={{ maxWidth: '45%' }}
+            className="d-flex forth-color w-100 mx-auto justify-content-start py-2 gap-4 align-items-center gap-3  rounded px-3"
+            style={{ maxWidt: '45%' }}
           >
-            <span className="h3 m-0">{search.length}</span>
+            <span className="h5 m-0">{search.length}</span>
             <span className="h6 m-0"> Options</span>
           </div>
         ) : (
           <div
-            className="d-flex my- mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3"
+            className="d-flex bg-dar my- mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3"
             style={{ maxWidth: '45%' }}
           >
             <span className="h3 m-0">{search.length}</span>
