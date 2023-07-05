@@ -26,7 +26,6 @@ function Home() {
     return <h2>Loading data...</h2>;
   }
 
-  // handleChange("All")
   return (
     <div className="min-vh-100 text-white third-color">
       <div className="sec-color">
@@ -77,7 +76,7 @@ function Home() {
       </div>
 
       <div className="containe">
-        <div className="row w-100 mx-auto">
+        <div className="row w-100 mx-auto paralel-container">
           {search.length > 0 ? (
             search.map((element, index) => (
               <button
@@ -89,7 +88,7 @@ function Home() {
                   dispatch(setSelected(index));
                 }}
                 className="item-card col-12 col-xs-6 gap-5 col-sm-6 col-md-4 col-xl-3 pt-5
-                    d-flex flex-column border-0 bg-transperent mx-auto rounded
+                    d-flex flex-column border-0 bg-transperent mx-auto rounded paralel-item
                   "
               >
                 <div className="d-flex justify-content-end pe-2 w-100">

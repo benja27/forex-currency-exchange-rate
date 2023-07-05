@@ -15,9 +15,6 @@
   background-color: #b93266;
 }
 
-.item-card:hover{  
-  transform: scale(1.1);
-}
 
 .item-card:nth-child(odd) {
   background-color: #e12d72;
@@ -42,6 +39,28 @@
 option {
   background-color: #ec4c8a;
 }
+
+.paralel-container{
+  perspective: 1000px; 
+  /* height: 200px; 
+  width: 200px;  */
+  margin: 0 auto;
+}
+
+.paralel-item{
+  /* height: 100%;
+  width: 100%; */
+  background-color: blue; /* Ajusta el color de fondo según tus necesidades */
+  transform-style: preserve-3d; /* Mantiene la transformación en 3D para los hijos */
+  /* transform: rotateY(45deg);  */
+  transition: transform 1s ease;
+}
+
+.paralel-item:hover {
+  transform: rotateY(-45deg); 
+  transform: translateX(-50px)
+}
+
 
 .content {
   flex-grow: 1;
