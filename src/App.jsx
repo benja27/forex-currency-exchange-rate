@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="d-flex flex-column min-vh-100">
