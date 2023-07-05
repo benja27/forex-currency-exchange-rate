@@ -1,17 +1,17 @@
-import { render, screen } from "@testing-library/react";
+import { render } from '@testing-library/react';
 
-import { Provider } from "react-redux";
-import store from "../redux/mainStore";
-import Detail from "../components/Detail";
-import { MemoryRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
+import store from '../redux/mainStore';
+import Detail from '../components/Detail';
 
-test("renders App component", () => {
-  const detail =  render(
+test('renders App component', () => {
+  const detail = render(
     <MemoryRouter>
       <Provider store={store}>
-          <Detail />        
+        <Detail />
       </Provider>
-    </MemoryRouter>
-  );  
-  expect(detail).toMatchSnapshot()
+    </MemoryRouter>,
+  );
+  expect(detail).toMatchSnapshot();
 });

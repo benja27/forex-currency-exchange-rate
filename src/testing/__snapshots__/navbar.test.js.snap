@@ -6,54 +6,6 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="d-flex flex-column min-vh-100"
-      >
-        <div
-          class="navbar text-white sec-color"
-        >
-          <div
-            class="container"
-          >
-            <div
-              class="row d-flex w-100"
-            >
-              <div
-                class="col-7 d-flex justify-content-end"
-              >
-                <a
-                  href="/"
-                >
-                  <h2
-                    class="text-white"
-                  >
-                    Forex
-                  </h2>
-                </a>
-              </div>
-              <div
-                class="col-5 d-flex justify-content-end align-items-center gap-4"
-              >
-                <i
-                  class="fas fa-microphone"
-                />
-                <i
-                  class="fas fa-cog"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>
-          Loading data...
-        </h2>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="d-flex flex-column min-vh-100"
-    >
-      <div
         class="navbar text-white sec-color"
       >
         <div
@@ -88,9 +40,43 @@ Object {
           </div>
         </div>
       </div>
-      <h2>
-        Loading data...
-      </h2>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="navbar text-white sec-color"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row d-flex w-100"
+        >
+          <div
+            class="col-7 d-flex justify-content-end"
+          >
+            <a
+              href="/"
+            >
+              <h2
+                class="text-white"
+              >
+                Forex
+              </h2>
+            </a>
+          </div>
+          <div
+            class="col-5 d-flex justify-content-end align-items-center gap-4"
+          >
+            <i
+              class="fas fa-microphone"
+            />
+            <i
+              class="fas fa-cog"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],

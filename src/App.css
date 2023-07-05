@@ -31,16 +31,34 @@
   background-color: var(--third-color);
 }
 
-.item-card:nth-child(odd) {
-  /* background-color: #e12d72; */
+/* .item-card {
   background-color: var(--main-color);
-  border-bottom: 1px solid rgb(255, 255, 255) !important;
+} */
+
+@media (min-width: 768px) {
+  .item-card:nth-child(odd) {
+    background-color: var(--main-color);
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+  }
+
+  .item-card:nth-child(even) {
+    background-color: var(--sec-color);
+    border-top: 1px solid rgb(255, 255, 255) !important;
+  }
 }
 
-.item-card:nth-child(even) {
-  /* background-color: #fc5193; */
-  background-color: var(--sec-color);
-  border-top: 1px solid rgb(255, 255, 255) !important;
+@media (max-width: 768px) {
+  .paralel-container button {
+    background-color: var(--main-color);
+  }
+
+  .paralel-container button:nth-child(4n) {
+    background-color: var(--sec-color);
+  }
+
+  .paralel-container button:nth-child(4n-3) {
+    background-color: var(--sec-color);
+  }
 }
 
 .form-select {
@@ -59,20 +77,11 @@ option {
 
 .paralel-container {
   perspective: 1000px;
-
-  /* height: 200px;
-  width: 200px;  */
   margin: 0 auto;
 }
 
 .paralel-item {
-  /* height: 100%;
-  width: 100%; */
-
-  /* background-color: blue;  */
-  transform-style: preserve-3d; /* Mantiene la transformación en 3D para los hijos */
-
-  /* transform: rotateY(45deg);  */
+  transform-style: preserve-3d;
   transition: transform 1s ease;
 }
 

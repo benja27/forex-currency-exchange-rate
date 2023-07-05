@@ -17,7 +17,6 @@ function Home() {
       dispatch(setSearch(data));
       return;
     }
-    // setIsSearching(true);
     const newBusqueda = data.filter((element) => element.ticker.includes(valor.toUpperCase()));
     dispatch(setSearch(newBusqueda));
   }
@@ -87,7 +86,7 @@ function Home() {
                   navigate('detail');
                   dispatch(setSelected(index));
                 }}
-                className="item-card col-12 col-xs-6 gap-5 col-sm-6 col-md-4 col-xl-3 pt-5
+                className="item-card col-6 col-xs-6 gap-5 col-sm-6 col-md-4 col-xl-3 pt-5
                     d-flex flex-column border-0 bg-transperent mx-auto rounded paralel-item
                   "
               >

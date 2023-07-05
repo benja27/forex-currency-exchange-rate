@@ -76,6 +76,7 @@ It gets its information from a international API service that provides real-time
 https://forex-viewer.netlify.app/
 - [Live Demo Link](https://forex-viewer.netlify.app/)
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -152,7 +153,6 @@ I recomend Netlify since it is the fastest and easiest way to deploy it
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Mariano Benjamin**
 
@@ -194,6 +194,9 @@ If you like this project please give me star! thanks!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank microverse for this great coding experience.
+
+And also I would like to thank (<a href="https://www.behance.net/sakwadesignstudio"> Nelson Sakwa </a>). He is the author of the original (<a href="https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)" > design </a>)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
