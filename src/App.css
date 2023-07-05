@@ -15,12 +15,18 @@
   background-color: #b93266;
 }
 
+.item-card:hover{  
+  transform: scale(1.1);
+}
+
 .item-card:nth-child(odd) {
   background-color: #e12d72;
+  border-bottom: 1px solid black !important;
 }
 
 .item-card:nth-child(even) {
   background-color: #fc5193;
+  border-top: 1px solid black !important;
 }
 
 .form-select {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -60,7 +59,7 @@ function Home() {
 
         {data.length === 124 ? (
           <div
-            className="d-flex my- mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3"
+            className="d-flex  mx-auto justify-content-center py-3  gap-4 align-items-center gap-3  rounded px-3"
             style={{ maxWidth: '45%' }}
           >
             <span className="h3 m-0">{search.length}</span>
@@ -89,8 +88,8 @@ function Home() {
                   navigate('detail');
                   dispatch(setSelected(index));
                 }}
-                className="item-card col-12 col-xs-6 gap-5 col-sm-6 col-md-4 col-xl-3 pt-5 bg-succes
-                    d-flex flex-column border-0 bg-transperent mx-auto
+                className="item-card col-12 col-xs-6 gap-5 col-sm-6 col-md-4 col-xl-3 pt-5
+                    d-flex flex-column border-0 bg-transperent mx-auto rounded
                   "
               >
                 <div className="d-flex justify-content-end pe-2 w-100">
