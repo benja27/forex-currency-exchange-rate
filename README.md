@@ -153,7 +153,6 @@ I recomend Netlify since it is the fastest and easiest way to deploy it
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Mariano Benjamin**
 

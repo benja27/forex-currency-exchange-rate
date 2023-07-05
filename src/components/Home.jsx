@@ -17,7 +17,6 @@ function Home() {
       dispatch(setSearch(data));
       return;
     }
-    // setIsSearching(true);
     const newBusqueda = data.filter((element) => element.ticker.includes(valor.toUpperCase()));
     dispatch(setSearch(newBusqueda));
   }

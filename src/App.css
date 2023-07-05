@@ -51,24 +51,15 @@
   .paralel-container button {
     background-color: var(--main-color);
   }
+
   .paralel-container button:nth-child(4n) {
     background-color: var(--sec-color);
   }
+
   .paralel-container button:nth-child(4n-3) {
     background-color: var(--sec-color);
   }
 }
-
-/* .paralel-container button{
-  background-color: var(--main-color) ;
-}
-
-.paralel-container button:nth-child(4n){
-  background-color: var(--sec-color);
-}
-.paralel-container button:nth-child(4n-3){
-  background-color: var(--sec-color);
-} */
 
 .form-select {
   background-color: var(--main-color);
@@ -86,20 +77,11 @@ option {
 
 .paralel-container {
   perspective: 1000px;
-
-  /* height: 200px;
-  width: 200px;  */
   margin: 0 auto;
 }
 
 .paralel-item {
-  /* height: 100%;
-  width: 100%; */
-
-  /* background-color: blue;  */
-  transform-style: preserve-3d; /* Mantiene la transformación en 3D para los hijos */
-
-  /* transform: rotateY(45deg);  */
+  transform-style: preserve-3d;
   transition: transform 1s ease;
 }
 
