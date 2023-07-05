@@ -2,9 +2,7 @@ import React from 'react';
 // import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 import { useNavigate } from 'react-router-dom';
-
 import { useDispatch, useSelector } from 'react-redux';
-
 import { setSelected, setSearch } from '../redux/data/dataSlice';
 
 function Home() {
