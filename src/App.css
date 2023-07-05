@@ -1,53 +1,53 @@
-.cards-container{
+.cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.main-color{
-  background-color: #e12d72 ;
-}
-.sec-color{
-  background-color: #e9518b ;
-}
-.third-color{
-  background-color: #b93266 ;
+.main-color {
+  background-color: #e12d72;
 }
 
-
-
-.item-card:nth-child(odd){
-  background-color: #e12d72 ;
+.sec-color {
+  background-color: #e9518b;
 }
-.item-card:nth-child(even){
-  background-color: #FC5193 ;
+
+.third-color {
+  background-color: #b93266;
+}
+
+.item-card:nth-child(odd) {
+  background-color: #e12d72;
+}
+
+.item-card:nth-child(even) {
+  background-color: #fc5193;
 }
 
 .form-select {
-  background-color: #EC4C8A;  
-  border-color: none;
+  background-color: #ec4c8a;
   box-shadow: none;
 }
+
 .form-select:focus {
-  background-color: #EC4C8A;  
-  border-color: none;
+  background-color: #ec4c8a;
   box-shadow: none;
 }
 
-option{
-  background-color: #EC4C8A;
+option {
+  background-color: #ec4c8a;
 }
 
-.content{
+.content {
   flex-grow: 1;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
 
-.detail-container{
+.detail-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
 }
 
 .check,
-.check *{
+.check * {
   border: 1px solid white;
 }

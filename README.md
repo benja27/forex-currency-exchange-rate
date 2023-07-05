@@ -73,8 +73,8 @@ It gets its information from a international API service that provides real-time
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Coming soon...
-<!-- - [Live Demo Link](https://google.com) -->
+https://forex-viewer.netlify.app/
+- [Live Demo Link](https://forex-viewer.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
