@@ -1,15 +1,18 @@
-import { render, screen } from "@testing-library/react";
+import { render } from '@testing-library/react';
 
-import { Provider } from "react-redux";
-import store from "../redux/mainStore";
-import App from "../App";
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import store from '../redux/mainStore';
+import Navbar from '../components/Navbar';
 
-test("renders App component", () => {
-  render(
-    <Provider store={store} >
-      <App />
-    </Provider>
+test('renders App component', () => {
+  const navbar = render(
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+    </Provider>,
   );
-  const linkElement = screen.getByText(/Forex/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(navbar).toMatchSnapshot();
 });

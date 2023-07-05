@@ -76,6 +76,7 @@ It gets its information from a international API service that provides real-time
 https://forex-viewer.netlify.app/
 - [Live Demo Link](https://forex-viewer.netlify.app/)
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

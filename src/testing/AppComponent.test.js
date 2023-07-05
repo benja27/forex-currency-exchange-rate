@@ -1,15 +1,15 @@
-import { render, screen } from "@testing-library/react";
+import { render } from '@testing-library/react';
 
-import { Provider } from "react-redux";
-import store from "../redux/mainStore";
-import App from "../App";
+import { Provider } from 'react-redux';
+import store from '../redux/mainStore';
+import App from '../App';
 
-test("renders App component", () => {
+test('renders App component', () => {
   const app = render(
-    <Provider store={store} >
+    <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   );
-  
-  expect(app).toMatchSnapshot()
+
+  expect(app).toMatchSnapshot();
 });
