@@ -1,16 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 function Detail() {
   const navigate = useNavigate();
-  // const complete = useSelector((data) => data.data);
   const data = useSelector((data) => data.data.data);
   const selected = useSelector((data) => data.data.selected)
     || parseInt(localStorage.getItem('selected'), 10);
   const item = data[selected];
-  // console.log('complete', complete);
-  // console.log('item', data[selected]);
 
   if (!item) {
     return (
