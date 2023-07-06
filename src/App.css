@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+/* red */
+
+/* :root {
+  --main-color: #e12d72;
+  --sec-color: #e9518b;
+  --third-color: #b93266;
+  --forth-color: #5788E4;
+} */
+
+/* blue */
+:root {
+  --main-color: #5788e4;
+  --sec-color: #4063a6;
+  --third-color: #4369b3;
+  --forth-color: #35548b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-color {
+  background-color: var(--main-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sec-color {
+  background-color: var(--sec-color);
+}
+
+.third-color {
+  background-color: var(--third-color);
+}
+
+.forth-color {
+  background-color: var(--third-color);
+}
+
+/* .item-card {
+  background-color: var(--main-color);
+} */
+
+@media (min-width: 768px) {
+  .item-card:nth-child(odd) {
+    background-color: var(--main-color);
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+  }
+
+  .item-card:nth-child(even) {
+    background-color: var(--sec-color);
+    border-top: 1px solid rgb(255, 255, 255) !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 768px) {
+  .paralel-container button {
+    background-color: var(--main-color);
+  }
+
+  .paralel-container button:nth-child(4n) {
+    background-color: var(--sec-color);
+  }
+
+  .paralel-container button:nth-child(4n-3) {
+    background-color: var(--sec-color);
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.form-select {
+  background-color: var(--main-color);
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-select:focus {
+  background-color: var(--main-color);
+  box-shadow: none;
+}
+
+option {
+  background-color: var(--third-color);
+}
+
+.paralel-container {
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.paralel-item {
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+.paralel-item:hover {
+  transform: rotateY(-45deg);
+  transform: translateX(-50px);
+}
+
+.content {
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
+.detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.check,
+.check * {
+  border: 1px solid white;
 }
