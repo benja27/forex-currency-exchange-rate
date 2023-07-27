@@ -1,10 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import datafromAPi from "./data/dataSlice"
+import { configureStore } from '@reduxjs/toolkit';
+import datafromAPi from './data/dataSlice';
 
 const store = configureStore({
-  reducer : {
-    data : datafromAPi
-  }
-})
+  reducer: {
+    data: datafromAPi,
+  },
+});
 
-export default store
+export default store;
